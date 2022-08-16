@@ -13,6 +13,13 @@ ruby-3.0.0
 * System dependencies
 
 * Configuration
+To run the server
+```terminal
+cd chitter
+bin/rails server
+```
+
+Navigate to http://localhost:3000
 
 * Database creation
 
