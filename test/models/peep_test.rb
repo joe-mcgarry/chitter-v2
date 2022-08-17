@@ -1,7 +1,10 @@
 require "test_helper"
 
 class PeepTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "should not save article without body" do
+    peep = Peep.new
+    assert_not peep.save, "You failed"
+  end
 end
+
+
