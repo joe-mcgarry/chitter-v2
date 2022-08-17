@@ -13,5 +13,3 @@ class PeepTest < ActiveSupport::TestCase
   end
 
 end
-
-

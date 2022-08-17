@@ -1,6 +1,6 @@
 class PeepsController < ApplicationController
 
   def index
-    peeps = peeps.all
+    @peeps = Peep.all
   end
 end
