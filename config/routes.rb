@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root "peeps#index"
 
   get "/peeps", to: "peeps#index"
+  get "/users/new", to: "users#new"
 end
