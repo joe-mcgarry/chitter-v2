@@ -7,11 +7,11 @@ class PeepTest < ActiveSupport::TestCase
   end
 
   test "peep body is saved" do
-    peep = Peep.new(user: "Joe", date: Date.new(2022,8,17), body: "Sophie is the best")
-    peep.save
-    assert_equal peep.all[0].body
-
-
+    # peep = Peep.new(user: "Joe", date: Date.new(2022,8,17), body: "Sophie is the best")
+    # peep.save
+    assert_equal "Sophie is the best", peeps(:two).body
   end
+
+end
 
 

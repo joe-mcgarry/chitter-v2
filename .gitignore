@@ -36,6 +36,9 @@ capybara-*.html
 /tmp/storage/*
 !/tmp/storage/
 !/tmp/storage/.keep
+vendor/bundle/*
+vendor/cache/*
+vendor/plugins/*
 
 /public/assets
 
