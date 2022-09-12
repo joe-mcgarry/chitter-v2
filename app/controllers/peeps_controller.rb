@@ -35,6 +35,13 @@ class PeepsController < ApplicationController
     end
   end
 
+  def destroy
+    @peep = Peep.find(params[:id])
+    @peep.destroy
+
+    redirect_to root_path, status: :see_other
+  end
+
   private
   def peep_params
     params.require(:peep).permit(:body)

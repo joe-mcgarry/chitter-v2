@@ -1,5 +1,16 @@
 <h2><%= @peep.body %></h2>
+<%= link_to "Home", peeps_path %>
 
 <ul>
     <li><%= link_to "Edit", edit_peep_path(@peep) %></li>
+    <li><%= link_to "Delete", peep_path(@peep), data: {
+                                                  turbo_method: :delete,
+                                                  turbo_confirm: "Are you sure?",
+                                                } %></li>
 </ul>
+
+<h2>Comments</h2>
+<%= render @peep.comments %>
+
+<h3>Add a comment:</h3>
+<%= render "comments/form" %>
